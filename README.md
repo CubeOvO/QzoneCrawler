@@ -1,5 +1,5 @@
 # QzoneCrawler
-qzone
+
 Download content from qzone using unofficial ''API''
 
 You have to be able to access the qzone that you wish to download
