@@ -14,23 +14,6 @@ curl_result = ''
 pics = []
 
 
-'''Emotion对象表示一条说说:
-刘奕成 2016-12-12 10:32:45 via iPad Pro
-233333 0 forwards 1 comments 米德嘉: 666666，
-包含以下属性：
-tid: 一个能唯一标识说说的字符串:d71a664acd7c4e5880500800；
-author: 作者QQ号:1248205527；
-nickname: 作者昵称或备注:刘奕成；
-ctime: 说说发布时间，Unix时间戳形式:1481538765；
-shortcon: 说说正文的前面一部分正文:233333；
-content: 说说完整正文:233333；
-pictures: 一个list，其中包含若干个Picture对象，后面会讲到:[]
-origin: 一个Emotion对象或None，被转发的原说说:None；
-location: 位置信息，是一个dict:{'id': '', 'idname': '', 'name': '', 'pos_x': '', 'pos_y': ''}；
-source: 发布说说所用的设备或途径名称:iPad Pro；
-forwardn: 被转发的次数:0； like: 一个dict，键为点赞的人的QQ号，值为二元组 昵称, 头像Picture对象:NotLoaded
-comments: 一个list，其中包含若干个Comment对象，后面会讲到:[] forwards: 一个list，其中包含若干个Emotion对象，它们都是对这条说说的转发
-'''
 
 # given qqid, picture link; download it
 def down_image(p,uin):
